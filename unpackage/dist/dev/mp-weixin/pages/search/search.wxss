@@ -1,0 +1,589 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/search/search.wxss */
+page {
+	background: #efefef;
+}
+.active {
+	border-bottom: 1px solid #58BA67;
+	color: #58BA67 !important;
+}
+.search_box {
+	background: #fff;
+	padding: 10rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.search_box>view:first-child {
+	background: #F4F4F4;
+	border-radius: 32rpx;
+	padding: 5px;
+	width: 85%;
+	height: 50rpx;
+	line-height: 50rpx;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.search_box>view:first-child image {
+	height: 23rpx;
+	width: 23rpx;
+	-webkit-flex-shrink: 0;
+	        flex-shrink: 0;
+	margin-right: 15rpx;
+	display: block;
+}
+.search_box>view:first-child form {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	font-size: 24rpx;
+}
+.search_box>view:last-child {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	text-align: center;
+	height: 50rpx;
+	color: #58BA67;
+	font-size: 26rpx;
+	line-height: 50rpx;
+}
+.history,
+.hot {
+	padding: 10rpx 30rpx;
+}
+.history>view:first-child,
+.hot>view:first-child {
+	color: #333333;
+	font-size: 26rpx;
+}
+.history>view:first-child {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.history>view:first-child>image {
+	width: 25rpx;
+	height: 27rpx;
+	display: block;
+}
+.history>view:last-child,
+.hot>view:last-child {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-top: 20rpx;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.history>view:last-child>view,
+.hot>view:last-child>view {
+	font-size: 22rpx;
+	color: #666666;
+	background: #F4F4F4;
+	margin-right: 30rpx;
+	padding: 15rpx;
+	border-radius: 10rpx;
+	margin-bottom: 30rpx;
+}
+/*搜素商品*/
+.searchNav {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	background: #fff;
+	color: #333333;
+	font-size: 32rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+.prodTotal {
+	margin: 0 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin-top: 20rpx
+}
+.prodTotal .oneProd {
+	background: #fff;
+	border-radius: 10rpx;
+	margin-bottom: 25rpx;
+	width: 48%;
+}
+.prodTotal>view:nth-child(2n) {
+	margin-left: 25rpx;
+}
+.prodTotal .oneProd>view:first-child {
+	width: 310rpx;
+	height: 310rpx;
+	margin: auto;
+	margin-top: 5rpx;
+}
+.prodTotal .oneProd>view:first-child>image {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.prodTotal .oneProd>view:nth-child(2) {
+	font-size: 28rpx;
+	color: #333333;
+	margin: 20rpx 10rpx;
+}
+.prodTotal .oneProd>view:nth-child(3) {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin: 20rpx 10rpx;
+}
+.prodTotal .oneProd>view:nth-child(3)>view:first-child>text:first-child {
+	font-size: 26rpx;
+	color: #FE6263;
+}
+.prodTotal .oneProd>view:nth-child(3)>view:first-child>text:last-child {
+	font-size: 32rpx;
+	color: #FE6263;
+}
+.prodTotal .oneProd>view:nth-child(3)>view:last-child>image {
+	width: 54rpx;
+	height: 54rpx;
+	display: block;
+}
+.headerTips {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin-top: 60rpx;
+}
+.headerTips>view:first-child {
+	width: 240rpx;
+	height: 280rpx;
+}
+.headerTips>view:first-child>image {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.headerTips>view:last-child {
+	margin-top: 30rpx;
+	font-size: 28rpx;
+	color: #999999;
+}
+/*猜你喜欢*/
+.gussTitle {
+	font-size: 30rpx;
+	color: #000000;
+	padding: 20rpx 0;
+	text-align: center;
+}
+.gussLoveList {
+	margin: 0 30rpx;
+	margin-top: 60rpx;
+}
+.guessLove {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.guessLove>view:nth-child(2n) {
+	margin-left: 32rpx;
+}
+.oneLove {
+	background: #FFFFFF;
+	border-radius: 20rpx;
+	width: 43%;
+	margin-bottom: 32rpx;
+	padding: 0 17rpx;
+	padding-bottom: 35rpx;
+}
+.oneLove>view:first-child {
+	height: 200rpx;
+	width: 50%;
+	margin: auto;
+	margin-top: 25rpx;
+}
+.oneLove>view:first-child>image {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.oneLove>view:nth-child(2) {
+	color: #333333;
+	font-size: 28rpx;
+	margin: 50rpx 0;
+}
+.oneLove>view:nth-child(3) {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.oneLove>view:nth-child(3)>view:first-child {
+	font-size: 26rpx;
+	color: #EA5252;
+}
+.oneLove>view:nth-child(3)>view:last-child {
+	margin-top: 10rpx;
+}
+.oneLove>view:nth-child(3)>view:last-child>image {
+	width: 44rpx;
+	height: 44rpx;
+}
+

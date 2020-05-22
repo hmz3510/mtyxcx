@@ -1,0 +1,1 @@
+<view class="box"><view>用户名:</view><view><input type="text" placeholder="输入新的用户名" focus="true" data-event-opts="{{[['input',[['__set_model',['','name','$event',[]]]]]]}}" value="{{name}}" bindinput="__e"/></view><view data-event-opts="{{[['tap',[['submit',['$event']]]]]}}" class="submit" bindtap="__e">确认</view></view>

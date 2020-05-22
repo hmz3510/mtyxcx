@@ -1,0 +1,1 @@
+<view class="container"><view class="logo"><view><image src="/static/images/img_webchat_login@3x.png"></image></view></view><button class="wx_login" open-type="getUserInfo" withCredentials="true" data-event-opts="{{[['getuserinfo',[['getUserInfo',['$event']]]]]}}" bindgetuserinfo="__e">授权用户信息</button></view>

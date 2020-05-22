@@ -1,0 +1,553 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/myorder/myorder.wxss */
+page {
+	background: #F4F4F4;
+}
+.headerNav {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	z-index: 999999999;
+}
+.headerNav .oneNav {
+	color: #333333;
+	font-size: 26rpx;
+	height: 64rpx;
+	line-height: 64rpx;
+}
+.headerActive {
+	border-bottom: 1px solid #58BA67;
+	color: #58BA67 !important;
+}
+.containerMiddle {
+	margin: 0 30rpx;
+	margin-top: 90rpx;
+}
+.oneOrder {
+	background: #fff;
+	border-radius: 10rpx;
+	padding: 30rpx 18rpx;
+	margin-bottom: 20rpx;
+}
+.oneOrder .oneHeader {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 20rpx;
+}
+.oneOrder .oneHeader>view:first-child {
+	font-size: 24rpx;
+	color: #999999;
+}
+.oneOrder .oneHeader>view:last-child {
+	font-size: 24rpx;
+	color: #58BA67;
+}
+.oneOrder .imgTotal {
+	margin-top: 30rpx;
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 20rpx;
+}
+.oneOrder .imgTotal .orderImg {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.oneOrder .imgTotal .orderImg .oneImg {
+	margin-right: 20rpx;
+}
+.oneOrder .imgTotal .orderImg .oneImg image {
+	width: 94rpx;
+	height: 94rpx;
+}
+.oneOrder .oneBottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin-top: 20rpx;
+}
+.oneOrder .oneBottom>view:first-child>text:first-child {
+	font-size: 28rpx;
+	color: #333333;
+}
+.oneOrder .oneBottom>view:first-child>text:last-child {
+	font-size: 32rpx;
+	color: #F65151;
+}
+.oneOrder .oneBottom>view:last-child {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.oneOrder .oneBottom>view:last-child>view {
+	font-size: 24rpx;
+	color: #333333;
+	height: 60rpx;
+	text-align: center;
+	line-height: 60rpx;
+	width: 130rpx;
+	border: 1px solid #E5E5E5;
+	border-radius: 10rpx;
+}
+.oneOrder .oneBottom>view:last-child>view:first-child {
+	margin-right: 20rpx;
+}
+.oneOrder::after {
+	clear: both;
+	display: block;
+	content: '';
+}
+/*待支付样式*/
+.dzfEmpty {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	-webkit-transform: translate(-50%, -65%);
+	        transform: translate(-50%, -65%);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.dzfEmpty>image:first-child {
+	width: 250rpx;
+	height: 305rpx;
+}
+.dzfEmpty>view:last-child {
+	font-size: 24rpx;
+	color: #999999;
+	margin-top: 30rpx;
+}
+

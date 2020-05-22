@@ -1,0 +1,256 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/city/city.wxss */
+.box {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999999;
+}
+.cltyList {
+	position: fixed;
+	width: 100%;
+	top: 16%;
+	height: 100%;
+}
+.empty {
+	color: #999;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 100%;
+}
+.search {
+	background: rgb(245, 245, 245);
+	border-radius: 5rpx;
+	padding: 10rpx 15rpx;
+	margin: 0 22rpx;
+	/* width:90%;
+  margin:auto; */
+}
+.search input {
+	font-size: 30rpx;
+}
+.search>view:first-child {
+	width: 30rpx;
+	margin-right: 20rpx;
+}
+.search image,
+.now_city image {
+	width: 30rpx;
+	height: 30rpx;
+	display: block;
+}
+.now_city {
+	font-size: 32rpx;
+	margin-top: 15rpx;
+	padding: 0 22rpx 22rpx;
+	height: 30px;
+	border-bottom: 1rpx solid #eee;
+}
+.now_city view:not(:first-child) {
+	margin: 0 5rpx;
+}
+.now_city>view:last-child {
+	font-weight: bold;
+}
+.left {
+	width: 92%;
+	padding-left: 22rpx;
+	box-sizing: border-box;
+	-webkit-flex-shrink: 0;
+	        flex-shrink: 0;
+}
+.title {
+	color: #999;
+	margin: 10px 0 0;
+}
+.city_name {
+	padding: 22rpx 0;
+	border-bottom: 1rpx solid #ddd;
+}
+.right {
+	width: 8%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	height: 396px;
+	margin: auto;
+	text-align: center;
+	font-size: 26rpx;
+}
+.type_title>view {
+	height: 18px;
+	width: 18px;
+	margin: auto;
+	line-height: 18px;
+	border-radius: 50%;
+}
+.nav_active {
+	background: #ddd;
+}
+

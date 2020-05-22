@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/editInfo/editInfo.wxss */
+page{
+  background:#F4F4F4;
+}
+.myontainer{
+  background: #fff;
+  padding:0 30rpx;
+  margin-top: 20rpx;
+}
+.myontainer>view:last-child{
+  border-bottom: none;
+}
+.changeTel{
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+        justify-content: space-between;
+-webkit-box-align: center;
+-webkit-align-items: center;
+        align-items: center;
+padding: 20rpx 0px;
+border-bottom: 1px solid #E5E5E5;
+}
+.changeTel>view:first-child{
+  font-size: 26rpx;
+  color: #333333;
+}
+.changeTel>view:last-child{
+  width: 50rpx;
+  height: 40rpx;
+}
+.changeTel>view:last-child>image{
+  width: 100%;
+  height: 100%;
+  display: blcok;
+}
+
+

@@ -1,0 +1,167 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* pages/address/address.wxss */
+page {
+		background: #F4F4F4;
+}
+.mySrcll {
+		margin-top: 20rpx;
+		background: #fff;
+}
+.addressList>view {
+		margin: 22rpx 22rpx;
+		padding-bottom: 22rpx;
+		border-bottom: 1rpx solid #E5E5E5;
+		margin-bottom: 10rpx;
+}
+.address_name {
+		font-size: 26rpx;
+		margin-bottom: 10rpx;
+		color: #333333 !important
+}
+.concat {
+		margin-top: 10rpx;
+		color: #BBBBBB;
+		font-size: 26rpx;
+}
+.addressList>view>view:last-child image {
+		height: 45rpx;
+		width: 45rpx;
+		display: block;
+}
+.add_address {
+		position: fixed;
+		bottom: 40rpx;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 30rpx;
+		box-sizing: border-box;
+		/* background: #F4F4F4; */
+}
+.add_address>view:first-child {
+		background: #58BA67;
+		margin: 0 30rpx;
+		width: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		height: 80rpx;
+		line-height: 80rpx;
+		font-size: 32rpx;
+		color: #fff;
+		border-radius: 10rpx;
+}
+.empty {
+		color: #999;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		width: 100%;
+}
+	/* .add_address image{
+  height:45rpx;
+  width:45rpx;
+  display:block;
+  margin-right:15rpx;
+
+} */
+

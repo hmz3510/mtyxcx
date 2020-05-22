@@ -1,0 +1,355 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/classification/classification.wxss */
+page{
+  background: #FDFDFD;
+  /* height: 100%; */
+}
+.choose{
+	color:#58BA67 !important;
+	background: #FFFFFF;
+}
+::-webkit-scrollbar {
+  width: 0rpx !important;
+  height: 0rpx;
+  color: transparent !important;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track{
+-webkit-box-shadow: inset 0 0 0rpx rgba(0,0,0,0);
+border-radius: 0rpx;
+background-color: #ffffff;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+border-radius: 0rpx;
+-webkit-box-shadow: inset 0 0 0rpx rgba(0,0,0,0);
+background-color: rgba(0,0,0,0);
+}
+.header_t{
+  width: 100%;
+}
+.header_s{
+  margin: 0 30rpx;
+  margin-top: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #F4F4F4;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.header_s>image{
+  width: 23rpx;
+  height: 23rpx;
+  position: absolute;
+  top:31%;
+  left:31%;
+}
+.header_s>input{
+  height: 100%;
+}
+.contaner_m{
+  background: #ffffff;
+}
+.contaner_m .container_m_l{
+  height: 100%;
+}
+.contaner_m .container_m_l .oneNav{
+  color: #999999;
+  font-size: 26rpx;
+  text-align: center;
+  height: 96rpx;
+  line-height: 96rpx;
+}
+.myswiper{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.contaier_m_r{
+  width: 72%;
+  margin-right: 30rpx;
+  margin-left: 20rpx;
+}
+.container_m_r_h{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.topScrpoll{
+  white-space: nowrap;
+  width: 100%;
+  height: 80rpx
+}
+.container_m_r_h .oneHeaderNav{
+  border: 1px solid #E5E5E5;
+  font-size: 24rpx;
+  padding: 15rpx 20rpx;
+  margin-right: 10rpx;
+}
+/*右边商品样式*/
+.container_m_r_m{
+  /* padding-bottom: 100rpx; */
+  position: relative;
+  padding-top: 20rpx;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-bottom: 20rpx;
+}
+/* .container_m_r_m>view:last-child{
+  border-bottom: none;
+} */
+.container_m_r_m_t{
+  /* margin: 10rpx 0; */
+  font-size: 26rpx;
+  color: #333333;
+  position: fixed;
+  z-index: 99999;
+  background: #ffffff;
+  width: 72%;
+  height: 60rpx;
+  line-height:60rpx;
+  top:7%;
+}
+.containerProd{
+  /* display: flex;
+  align-items: center; */
+  border:2rpx solid #E5E5E5;
+  padding-bottom: 10rpx;
+  margin-bottom: 24rpx;
+  width:230rpx;
+  padding:5rpx 15rpx 10rpx 15rpx;
+  border-radius: 10rpx;
+}
+.containerProd>view:first-child{
+  height: 190rpx;
+  width:100%;
+  margin-right: 10rpx;
+}
+.containerProd>view:first-child>image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.containerProd>view:nth-child(2){
+  width: 100%;
+}
+.containerProd>view:nth-child(2)>view:first-child{
+  color: #000000;
+  font-size: 26rpx;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  width:100%;
+  overflow: hidden;
+}
+.containerProd>view:nth-child(2)>view:nth-child(2){
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 30rpx;
+}
+.containerProd>view:nth-child(2)>view:nth-child(2)>view:first-child{
+  font-size: 22rpx;
+  color: #EA5252;
+}
+.containerProd>view:nth-child(2)>view:nth-child(2)>view:first-child>text:last-child{
+  font-size: 32rpx;
+}
+.containerProd>view:nth-child(2)>view:nth-child(2)>view:nth-child(2)>image{
+  width: 54rpx;
+  height: 54rpx;
+  vertical-align: middle;
+}
+.containerProd>view:nth-child(2)>view:nth-child(2)>view:nth-child(2)>text{
+  width: #333333;
+  font-size: 26rpx;
+  margin: 0 15rpx;
+}
+

@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/change_phone/change_phone.wxss */
+.container {
+	width: 93%;
+	margin: auto;
+	font-size: 36rpx;
+}
+page {
+	background: #fff;
+}
+.box {
+	padding: 10rpx 0;
+	width: 100%;
+	height: 50rpx;
+	border-bottom: 1rpx solid #ddd;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin-bottom: 20rpx;
+}
+.box view {
+	line-height: 50rpx;
+	color: #888;
+	font-size: 30rpx;
+	height: 100%;
+	text-align: right;
+}
+.box input {
+	height: 100%;
+}
+.note {
+	font-size: 30rpx;
+	text-align: center;
+	color: #888;
+}
+.code_ok {
+	color: rgb(246, 193, 55) !important;
+}
+.login {
+	width: 100%;
+	text-align: center;
+	background: rgb(222, 222, 222);
+	color: rgb(188, 188, 188);
+	margin-top: 20rpx;
+}
+.login_ok {
+	background: rgb(246, 193, 55) !important;
+	color: rgb(53, 53, 53);
+}
+

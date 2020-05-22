@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classification/classification",
+    "pages/enjoy/enjoy",
+    "pages/change_name/change_name",
+    "pages/prodDetail/prodOld",
+    "pages/index/ceshi",
+    "pages/change_phone/change_phone",
+    "pages/orderDetail/orderDetail",
+    "pages/editInfo/editInfo",
+    "pages/getUserInfo/getUserInfo",
+    "pages/account/account",
+    "pages/search/search",
+    "pages/red/red",
+    "pages/yhq/yhq",
+    "pages/city/city",
+    "pages/note/note",
+    "pages/address/address",
+    "pages/address/address_detail",
+    "pages/prodDetail/prodDetail",
+    "pages/order/order",
+    "pages/login/login_type",
+    "pages/shopcar/shopcar",
+    "pages/mine/mine"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#9B9DB1",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/index/tabbar_home_n@3x.png",
+        "selectedIconPath": "static/images/index/tabbar_home_s@3x.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "iconPath": "static/images/index/tabbar_fl_n@3x.png",
+        "selectedIconPath": "static/images/index/tabbar_fl_s@3x.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "iconPath": "static/images/index/tabbar_gwc_n@3x.png",
+        "selectedIconPath": "static/images/index/tabbar_gwc_s@3x.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/images/index/tabbar_me_n@3x.png",
+        "selectedIconPath": "static/images/index/tabbar_me_s@3x.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的信息将帮你获取更好的体验"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap73.json"
+}

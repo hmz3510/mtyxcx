@@ -1,0 +1,1 @@
+<view class="container"><view class="logo"><view><image src="/static/images/img_webchat_login@3x.png"></image></view></view><button class="wx_login" open-type="getPhoneNumber" withCredentials="true" data-event-opts="{{[['getphonenumber',[['getPhoneNumber',['$event']]]]]}}" bindgetphonenumber="__e">微信登陆</button></view>

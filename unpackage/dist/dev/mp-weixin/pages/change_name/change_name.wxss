@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/change_ame/change_name.wxss */
+.box {
+	padding: 22rpx;
+}
+.box>view:first-child {
+	font-size: 28rpx;
+	color: #535353;
+}
+.box>view:nth-child(2) {
+	border-bottom: 1rpx solid #eee;
+	padding: 20rpx 0;
+}
+.submit {
+	border-radius: 5rpx;
+	font-size: 30rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	background: rgb(246, 193, 55);
+	text-align: center;
+	margin-top: 20rpx;
+}
+
